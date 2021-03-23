@@ -3,7 +3,7 @@ const { query } = require('../../common/pgClient.js');
 module.exports = {
     name: 'inventory',
     description: 'contents of your inventory',
-    aliases: ['i'],
+    aliases: ['i', 'inv'],
     execute(message, args) {
         if (args[0] === 'add' && args[1]) {
             query('INSERT INTO items (name, owner__id, value, buff, category) VALUES ($1, $2, $3, $4, $5)', [args[1], message.author.id, 300, 'Default', 'Default'] )
