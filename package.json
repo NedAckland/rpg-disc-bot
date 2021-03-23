@@ -1,0 +1,23 @@
+{
+  "name": "rpg-disc-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^4.0.3",
+    "discord.js": "^12.5.1",
+    "erlpack": "github:discord/erlpack",
+    "keyv": "^4.0.3",
+    "node-postgres": "^0.6.2",
+    "pg": "^8.0.3",
+    "unique-names-generator": "^4.4.0",
+    "utf-8-validate": "^5.0.4",
+    "zlib-sync": "^0.1.7"
+  }
+}
