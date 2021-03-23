@@ -1,6 +1,7 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+require('dotenv').config();
+const { prefix } = require('./config.json');
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -81,5 +82,4 @@ client.on('message', message => {
         message.reply('there was an error trying to execute that command!');
     }
 });
-
-client.login(token);
+client.login(process.env.DISC_TOKEN);

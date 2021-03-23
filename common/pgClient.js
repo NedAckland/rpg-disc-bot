@@ -1,11 +1,11 @@
 const { Pool } = require('pg')
 
 const pool = new Pool({
-    user: 'nedokun',
-    host: 'localhost',
-    database: 'dungeon',
-    password: 'password',
-    port: 5432,
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PWRD,
+    port: process.env.DB_PORT,
 });
 
 module.exports = {
