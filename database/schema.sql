@@ -18,7 +18,13 @@ CREATE TABLE player (
     name VARCHAR(255),
     wallet INT,
     level INT,
-    xp INT
+    xp INT,
+    onquest BOOLEAN
+);
+
+CREATE TABLE shop (
+   id SERIAL PRIMARY KEY,
+   item__id BIGINT
 );
 
 -- INSERT INTO users(name) VALUES ('Cao');
